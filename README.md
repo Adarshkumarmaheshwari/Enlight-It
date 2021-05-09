@@ -10,6 +10,6 @@ To start in the development environment\
 To start in the production environment\
  ``` npm start```
 
-Heroku link:\
+Heroku link:
 
 https://enlightit.herokuapp.com/
