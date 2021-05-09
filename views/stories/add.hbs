@@ -1,14 +1,14 @@
 <h3>Add Story</h3>
 <div>
     <form action="/stories" method="POST">
-        <div>
+        <section>
             <div class="left-margin">
                 <label for="title">Title</label>
                 <input class="formatting-input" type="text" name="title">
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <div class="left-margin">
                 <label for="status">Status</label>
                 <select name="status" class="formatting-input">
@@ -16,18 +16,18 @@
                     <option value="private">Private</option>
                 </select>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <div class="left-margin">
                 <h5>Tell Us Your Story:</h5><br>
                 <textarea name="body" class="formatting-input"></textarea>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <input type="submit" value="Save" class="formatting-input">
             <a href="/dashboard" class="formatting-input">Cancel</a>
-        </div>
+        </section>
     </form>
 </div>
