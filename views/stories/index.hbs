@@ -3,10 +3,10 @@
     {{#each stories}}
         <div class="story-format">
             <div>
-                <div>
+                <section>
                     {{{editIcon user ../user _id}}}
-                </div>
-                <div class="left-margin">
+                </section>
+                <section class="left-margin">
                     <h2 class="center-align top-pad">{{title}}</h2>
                     <br>
                     <div>
@@ -15,11 +15,11 @@
                     <a href="/stories/user/{{user._id}}">
                        {{user.displayName}}
                     </a>
-                </div>
-                <div class="left-margin">
+                </section>
+                <section class="left-margin">
                     <a href="/stories/{{_id}}" class="float-right">Read More</a>
                     <p class="btm-pad">{{stripTags (truncate body 150)}}</p>
-                </div>
+                </section>
             </div>
         </div>
     {{else}}
