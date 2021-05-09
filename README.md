@@ -2,7 +2,7 @@
 Guide:
 
 To install all the dependencies 
-  npm install
+ ``` npm install```
 
 To start in the development environment
   npm run dev
