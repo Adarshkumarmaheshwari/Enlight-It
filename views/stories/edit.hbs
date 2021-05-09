@@ -1,15 +1,15 @@
 <h3>Edit Story</h3>
-<div>
+<article>
     <form action="/stories/{{story._id}}" method="POST">
         <input type="hidden" name="_method" value="PUT">
-        <div>
+        <section>
             <div class="left-margin">
                 <label for="title">Title</label>
                 <input class="formatting-input" type="text" name="title" value="{{story.title}}">
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <div class="left-margin">
                 <label for="status">Status</label>
                 <select name="status" class="formatting-input">
@@ -19,18 +19,18 @@
                     {{/select}}
                 </select>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <div class="left-margin">
                 <h5>Tell Us Your Story:</h5>
                 <textarea name="body" class="formatting-input">{{story.body}}</textarea>
             </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <input type="submit" value="Save" class="formatting-input">
             <a href="/dashboard" class="formatting-input">Cancel</a>
-        </div>
+        </section>
     </form>
-</div>
+</article>
